@@ -15,6 +15,17 @@ export default function Home() {
     return matchesCategory && matchesSearch;
   });
 
+  // Добавь эту функцию внутри компонента Home, перед return
+const trackClick = (toolName) => {
+  // В будущем сюда можно подключить Telegram-бота, чтобы тебе приходило уведомление
+  console.log(`Пользователь заинтересовался: ${toolName}`);
+  
+  // Если используешь Vercel Analytics (включается одной кнопкой в панели Vercel)
+  if (window.va) {
+    window.va.track('click_tool', { name: toolName });
+  }
+};
+
   return (
     <div className="min-h-screen bg-[#f8fafc] font-sans text-slate-900">
       <header className="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
@@ -103,6 +114,7 @@ export default function Home() {
                   href={tool.link} 
                   target="_blank" 
                   rel="noopener noreferrer"
+                  onClick={() => trackClick(tool.name)} // ДОБАВЬ ЭТУ СТРОКУ
                   className="bg-blue-600 text-white px-6 py-3 rounded-xl text-sm font-bold hover:bg-blue-700 shadow-lg shadow-blue-100 transition-all"
                 >
                   Попробовать
@@ -134,6 +146,16 @@ export default function Home() {
             <h4 className="text-white font-bold mb-4 text-lg">Сотрудничество</h4>
             <p className="text-sm mb-4">Добавьте свой сервис в каталог</p>
             <a href="mailto:ribosomov92@mail.ru" className="text-white font-bold hover:text-blue-400">contact@email.com</a>
+          </div>
+        
+          <div>
+             <h4 className="text-white font-bold mb-4 text-lg">Инфо</h4>
+              <ul className="text-sm space-y-2">
+              <li>
+              <a href="/privacy" className="hover:text-white transition">Политика конфиденциальности</a>
+              </li>
+              <li className="text-slate-500 italic">© 2026 RuBusinessAI</li>
+              </ul>
           </div>
         </div>
       </footer>
