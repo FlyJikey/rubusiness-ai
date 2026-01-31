@@ -95,10 +95,15 @@ const trackClick = (toolName) => {
               
               <h3 className="text-2xl font-bold mb-1 group-hover:text-blue-600 transition-colors">{tool.name}</h3>
               
-              {/* ДОБАВИЛИ РЕЙТИНГ (визуальный эффект доверия) */}
+              {/* ТЕПЕРЬ РЕЙТИНГ РЕАЛЬНЫЙ */}
               <div className="flex items-center mb-4">
-                <div className="flex text-yellow-400 text-sm">★★★★★</div>
-                <span className="ml-2 text-xs text-slate-400 font-medium">4.9 (120+ отзывов)</span>
+                <div className="flex text-yellow-400 text-sm">
+                {/* Рисуем столько звезд, сколько в рейтинге */}
+                {"★".repeat(Math.floor(tool.rating))}{"☆".repeat(5 - Math.floor(tool.rating))}
+                </div>
+                <span className="ml-2 text-xs text-slate-400 font-medium">
+                {tool.rating} ({tool.reviews} отзывов)
+                </span>
               </div>
 
               <p className="text-slate-500 leading-relaxed mb-6 text-sm flex-grow">
