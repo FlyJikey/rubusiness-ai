@@ -6,7 +6,7 @@ export const tools = [
     category: "Маркетинг",
     description: "Профессиональный ИИ-копирайтер. Пишет SEO-статьи, карточки товаров для WB/Ozon и посты для соцсетей. Заменяет штат копирайтеров.",
     price: "от 330 ₽",
-    link: "https://gerwin.io", 
+    link: "https://t.me/GerwinPromoBot?start=referrer_TETRTEYX ", 
     tag: "Топ в РФ"
   },
   {
@@ -15,7 +15,7 @@ export const tools = [
     category: "Маркетинг",
     description: "Генератор отзывов, описаний и рерайт текстов. Помогает быстро наполнять интернет-магазины уникальным контентом.",
     price: "от 490 ₽",
-    link: "https://turbotext.pro",
+    link: "https://www.turbotext.ru/photo_ai/create?rfid=1998631",
     tag: "Для магазинов"
   },
 
@@ -86,7 +86,7 @@ export const tools = [
     category: "Поиск лидов",
     description: "ИИ-сервис для поиска теплых B2B клиентов. Находит компании по 60+ критериям и финансовым показателям.",
     price: "от 15 000 ₽",
-    link: "https://kontur.ru/kompas",
+    link: "https://kontur.ru/compass?p=w46281",
     tag: "Для B2B"
   }
 ];
