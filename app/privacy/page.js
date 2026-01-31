@@ -1,42 +1,45 @@
-import React from 'react';
-
-export default function PrivacyPolicy() {
+export default function Privacy() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-16 font-sans text-slate-800">
-      <h1 className="text-3xl font-bold mb-8 text-slate-900">Политика конфиденциальности</h1>
-      
-      <section className="space-y-6">
-        <p>Настоящая Политика описывает, как <strong>RuBusinessAI</strong> собирает и использует данные при посещении сайта.</p>
+    <div className="min-h-screen bg-white text-slate-900 font-sans">
+      <div className="max-w-3xl mx-auto px-6 py-16">
+        <h1 className="text-3xl font-extrabold mb-8 text-black border-b pb-4">
+          Политика конфиденциальности
+        </h1>
         
-        <div>
-          <h2 className="text-xl font-bold mb-3 text-slate-900">1. Какие данные мы собираем?</h2>
-          <p>Мы используем инструменты анонимной аналитики (Vercel Analytics), которые фиксируют техническую информацию:</p>
-          <ul className="list-disc ml-6 mt-2 space-y-1">
-            <li>Тип устройства и браузера;</li>
-            <li>Регион (на уровне города);</li>
-            <li>Действия на сайте (нажатия на кнопки, переходы по категориям).</li>
-          </ul>
-          <p className="mt-2 text-blue-600 font-medium italic">Важно: мы не собираем ваши ФИО, номера телефонов, пароли или данные банковских карт.</p>
-        </div>
+        <div className="space-y-8 text-lg leading-relaxed">
+          <section>
+            <p>Настоящая Политика описывает, как <strong>RuBusinessAI</strong> собирает и использует данные при посещении сайта.</p>
+          </section>
 
-        <div>
-          <h2 className="text-xl font-bold mb-3 text-slate-900">2. Цель сбора данных</h2>
-          <p>Данные собираются исключительно для улучшения работы каталога и понимания того, какие ИИ-сервисы наиболее интересны пользователям.</p>
-        </div>
+          <section>
+            <h2 className="text-xl font-bold mb-4 text-black">1. Какие данные мы собираем?</h2>
+            <p>Мы используем инструменты анонимной аналитики (Vercel Analytics), которые фиксируют техническую информацию:</p>
+            <ul className="list-disc ml-6 mt-3 space-y-2">
+              <li>Тип устройства и браузера;</li>
+              <li>Регион (на уровне города);</li>
+              <li>Действия на сайте (нажатия на кнопки, переходы по категориям).</li>
+            </ul>
+            <p className="mt-4 p-4 bg-blue-50 border-l-4 border-blue-500 text-blue-800 text-sm italic">
+              Важно: мы не собираем ваши ФИО, номера телефонов, пароли или данные банковских карт.
+            </p>
+          </section>
 
-        <div>
-          <h2 className="text-xl font-bold mb-3 text-slate-900">3. Сторонние ссылки</h2>
-          <p>Наш сайт содержит ссылки на сторонние ресурсы (партнерские программы). Мы не несем ответственности за политику конфиденциальности и содержание этих сайтов.</p>
-        </div>
+          <section>
+            <h2 className="text-xl font-bold mb-4 text-black">2. Цель сбора данных</h2>
+            <p>Данные собираются исключительно для улучшения работы каталога и понимания того, какие ИИ-сервисы наиболее интересны пользователям.</p>
+          </section>
 
-        <div>
-          <h2 className="text-xl font-bold mb-3 text-slate-900">4. Согласие</h2>
-          <p>Используя наш сайт, вы соглашаетесь с условиями данной Политики.</p>
-        </div>
-      </section>
+          <section>
+            <h2 className="text-xl font-bold mb-4 text-black">3. Сторонние ссылки</h2>
+            <p>Наш сайт содержит ссылки на сторонние ресурсы (партнерские программы). Мы не несем ответственности за политику конфиденциальности и содержание этих сайтов.</p>
+          </section>
 
-      <div className="mt-12 pt-8 border-t border-slate-200">
-        <a href="/" className="text-blue-600 font-bold hover:underline">← Вернуться на главную</a>
+          <section className="pt-8 border-t">
+            <a href="/" className="inline-block bg-slate-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-slate-800 transition">
+              ← Вернуться на главную
+            </a>
+          </section>
+        </div>
       </div>
     </div>
   );
