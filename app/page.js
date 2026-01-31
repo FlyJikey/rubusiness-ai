@@ -133,7 +133,7 @@ export default function Home() {
           <div>
             <h4 className="text-white font-bold mb-4 text-lg">Сотрудничество</h4>
             <p className="text-sm mb-4">Добавьте свой сервис в каталог</p>
-            <a href="mailto:ribosomov92@mail.ru" className="text-white font-bold hover:text-blue-400">твой@email.com</a>
+            <a href="mailto:ribosomov92@mail.ru" className="text-white font-bold hover:text-blue-400">contact@email.com</a>
           </div>
         </div>
       </footer>
