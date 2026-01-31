@@ -23,7 +23,7 @@ export default function Home() {
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">B</div>
             <h1 className="text-xl font-bold tracking-tight">RuBusiness<span className="text-blue-600">AI</span></h1>
           </div>
-          <a href="https://t.me/твой_аккаунт" target="_blank" className="text-sm font-medium bg-slate-900 text-white px-4 py-2 rounded-full hover:bg-slate-800 transition">
+          <a href="https://t.me/rusbusi" target="_blank" className="text-sm font-medium bg-slate-900 text-white px-4 py-2 rounded-full hover:bg-slate-800 transition">
             Реклама на сайте
           </a>
         </div>
@@ -133,7 +133,7 @@ export default function Home() {
           <div>
             <h4 className="text-white font-bold mb-4 text-lg">Сотрудничество</h4>
             <p className="text-sm mb-4">Добавьте свой сервис в каталог</p>
-            <a href="mailto:твой@email.com" className="text-white font-bold hover:text-blue-400">твой@email.com</a>
+            <a href="mailto:ribosomov92@mail.ru" className="text-white font-bold hover:text-blue-400">твой@email.com</a>
           </div>
         </div>
       </footer>
