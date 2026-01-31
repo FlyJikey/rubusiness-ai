@@ -157,6 +157,7 @@ const trackClick = (toolName) => {
               <li className="text-slate-500 italic">© 2026 RuBusinessAI</li>
               </ul>
           </div>
+          
         </div>
       </footer>
     </div>
